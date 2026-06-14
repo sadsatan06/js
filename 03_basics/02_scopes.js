@@ -1,10 +1,10 @@
-//var c = 300
+//var c = 300  global scope used by var not favorable 
 let a = 300
 if (true) {
     let a = 10
     const b = 20
     // console.log("INNER: ", a);
-    
+
 }
 
 
@@ -14,16 +14,16 @@ if (true) {
 // console.log(c);
 
 
-function one(){
+function one() {
     const username = "hitesh"
 
-    function two(){
+    function two() {
         const website = "youtube"
         console.log(username);
     }
     // console.log(website);
 
-     two()
+    two()
 
 }
 
@@ -46,13 +46,13 @@ if (true) {
 
 console.log(addone(5))
 
-function addone(num){
+function addone(num) {
     return num + 1
 }
 
 
 
-addTwo(5)
-const addTwo = function(num){
+//addTwo(5)
+const addTwo = function (num) {
     return num + 2
 }
